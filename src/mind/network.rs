@@ -61,7 +61,6 @@ impl Network {
 
         self.feedforward(&data, false);
         self.backpropagate(&data);
-        self.feedforward(&data, false);
         self.correct_weights();
     }
 
